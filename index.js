@@ -1,3 +1,5 @@
+const dotenv= require("dotenv")
+dotenv.config()
 const express = require("express")
 const Router = require("./Route/DataSend")
 const cors = require("cors")
@@ -10,6 +12,6 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use("/api" ,Router)
 
-app.listen(2829, () => {
-    console.log("Server Is running at 8000 port")
+app.listen(process.env.PORT, () => {
+    console.log(`Server Is running at ${process.env.PORT} port`)
 })
