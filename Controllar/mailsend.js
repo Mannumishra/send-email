@@ -31,7 +31,7 @@ const sendMail = async (req, res) => {
 
         const senddatainMail = {
             from: req.body.email || "no-reply@example.com",  // Default to 'no-reply' if no email is provided
-            to: "mharshvardhan40@gmail.com", // Recipient email
+            to: "Pathway2happiness@gmail.com", // Recipient email
             subject: "New Query Received Successfully!",
             html: emailContent          // Use HTML content
         };
