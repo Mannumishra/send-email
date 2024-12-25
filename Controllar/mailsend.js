@@ -33,7 +33,7 @@ const sendMail = async (req, res) => {
             from: req.body.email || "no-reply@example.com",  // Default to 'no-reply' if no email is provided
             to: "Pathway2happiness@gmail.com", // Recipient email
             subject: "New Query Received Successfully!",
-            html: emailContent          // Use HTML content
+            html: emailContent     
         };
 
         transporter.sendMail(senddatainMail, (error) => {
